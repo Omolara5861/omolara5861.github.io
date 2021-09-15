@@ -422,7 +422,7 @@ p {
 	max-width: 400px;
 	height: 300px ;
 	position: relative;
-	margin: auto;
+	margin: 20px auto;
   }
   
   /* Hide the images by default */

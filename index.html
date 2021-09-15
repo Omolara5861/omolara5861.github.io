@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Css File -->
     <link rel="stylesheet" href="style.css">
     <title>Lara's personal Website</title>
 </head>
 <body>
     <!-- Header -->
+    <!-- Navbar Code Starts Here -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
@@ -18,10 +23,12 @@
             <h1><span>O</span>molara <span>A</span>debowale</h1>
           </a>
         </div>
+        <!-- Code to activate Dom for Small screen Devices -->
         <div class="nav-list">
           <div class="hamburger">
             <div class="bar"></div>
           </div>
+          <!-- Menu Items -->
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#about" data-after="About">About</a></li>
@@ -33,11 +40,10 @@
       </div>
     </div>
   </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
+      <!-- Navbar Code Starts Here -->
+      
+      <!-- Hero Section starts Here -->
+      <section id="hero">
     <div class="hero container">
       <div>
         <h1>Hello, <span></span></h1>
@@ -49,12 +55,14 @@
           <span></span>
           <span></span>
           Portfolio</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+    </section>
+    <!--Hero Section Ends here -->
+    <!-- Ended Header -->
 
-  <!-- About Section -->
+
+  <!-- About Me Section Starts Here -->
   <section id="about">
     <div class="about container">
       <div class="col-left">
@@ -74,12 +82,9 @@
           Download Resume</a>
       </div>
     </div>
-    <!-- Slider -->
-
-    <!-- Slideshow container -->
+     <h3 style="font-size: 4em; font-weight: 500; text-align: center;">Meet My Friends</h3>
+    <!-- Slider Image code begins Here -->
 <div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext" ></div>
     <img src="img/Preshy.jpeg" alt="Precious Picture" height="300px">
@@ -128,13 +133,13 @@
     <div class="text">Meet Nelson</div>
   </div>
 
-  <!-- Next and previous buttons -->
+  <!-- Next and previous buttons of the Slider -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
+<!-- The dots/circles below the Slider -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
@@ -143,19 +148,18 @@
   <span class="dot" onclick="currentSlide(5)"></span>
   <span class="dot" onclick="currentSlide(6)"></span>
   <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
 </div>
+</section>
+  <!--About me Section ends here-->
 
-  </section>
-  <!-- End About Section -->
 
-  <!--  Begining of Qualification Section -->
-  <section id="qualification" class="menu">
+  <!--  Begining of the Qualification Section -->
+
+  <section class="menu">
     <div class="menu-container">
-
+      <h1  id="qualification" class="section-title" >Qualifications</h1>
     </div>
-    <h1 class="section-title" >Qualifications</h1>
+    <!-- Filterable Categories -->
     <div class = "menu-btns">
       <button type = "button" class = "menu-btn active-btn" id = "experience">Experience</button>
       <button type = "button" class = "menu-btn" id = "education">Education</button>
@@ -163,8 +167,7 @@
     </div>
 
     <div class="items">
-     
-      <!-- item -->
+      <!-- First item in experience Category -->
       <div class = "quali-item experience">
         <div class = "duration">
           <h4>July 2021 - Present</h4>
@@ -182,7 +185,7 @@
       </div>
       <!-- end of item -->
 
-      <!-- item -->
+          <!-- First item in education Category -->
       <div class = "quali-item education">
         <div class = "duration">
           <h4>Nov 2011 - July 2016</h4>
@@ -196,7 +199,8 @@
       </div>
       <!-- end of item -->
 
-       <!-- item -->
+      <!-- First item in certification Category -->
+
        <div class = "quali-item certification">
         <div class = "duration">
           <h4>December 2020</h4>
@@ -207,7 +211,7 @@
       </div>
       <!-- end of item -->
 
-      <!-- item -->
+      <!-- Last item in experience Category -->
       <div class = "quali-item experience">
         <div class = "duration">
           <h4>April 2021 - Present</h4>
@@ -227,7 +231,7 @@
       </div>
       <!-- end of item -->
 
-       <!-- item -->
+      <!-- Last item in education Category -->
        <div class = "quali-item education">
         <div class = "duration">
           <h4>Jan 2004 - July 2009</h4>
@@ -241,7 +245,7 @@
       </div>
       <!-- end of item -->
 
-      <!-- item -->
+      <!-- Last item in certification Category -->
       <div class = "quali-item certification">
         <div class = "duration">
           <h4>April 2021</h4>
@@ -254,13 +258,11 @@
       <!-- end of item -->
 
     </div>
-
   </section>
-
   <!-- End of Qualification Section -->
   
-  <!-- Skills Section -->
 
+  <!-- Skills Section -->
   <section id="skills" >
     <h1 style="margin-top: 70px;" class="section-title">My <span>Skillset</span></h1>
     <div class="container2">
@@ -311,10 +313,9 @@
     </div>
   </div>
   </section>
-  
   <!-- End Skills Section -->
 
-  <!-- Projects Section -->
+  <!-- Prortfolio/Project Section Starts here-->
   <section style="margin-top: 150px;"  id="projects">
       <div class="projects-header">
         <h1 class="section-title">Some of my <span>Projects</span></h1>
@@ -357,17 +358,15 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
     </div>
 </section>
   <!-- End Projects Section -->
   
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="qualification">
     <div class="contact container">
       <div>
-        
         <h1 class="section-title">Contact <span>info</span></h1>
       </div>
       <div class="contact-items">
@@ -395,7 +394,7 @@
       </div>
     </div>
   </section>
-  <!-- End Contact Section -->
+  <!-- End of Contact Section -->
 
   <!-- Footer -->
   <section id="footer">
@@ -417,7 +416,6 @@
     </div>
     <p>Copyright © 2021 Lara. All rights reserved</p>
   </section>
-  <!-- End Footer -->
   <script src="script.js"></script>
 </body>
 </html>

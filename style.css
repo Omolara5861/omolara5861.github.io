@@ -41,7 +41,7 @@ p {
 	letter-spacing: 0.05rem;
 }
 .section-title {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 300;
 	color: var(--secondary-color);
 	margin-bottom: 10px;
@@ -507,10 +507,11 @@ p {
     padding: 0.6rem 0;
     display: flex;
     justify-content: center;
+	flex-direction: column;
 }
 .menu-btn{
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 	font-weight: 600;
 	letter-spacing: 0.2rem;
     background: none;
@@ -560,6 +561,7 @@ b {
 }
 .quali-item{
     border-radius: 4px;
+	padding: 0.5rem .8rem;
     overflow: hidden;
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -590,7 +592,7 @@ b {
     width: 100px;
     height: 3px;
     background: var(--main-color);
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 .course{
     padding: 0.4rem 0;
@@ -903,6 +905,9 @@ b {
 	/* End About */
 
 	/* Qualification */
+	.menu-btns {
+		flex-direction: row;
+	}
 	.quali-item{
         display: grid;
         grid-template-columns: 25% auto;
@@ -977,6 +982,11 @@ b {
 	}
 	/* End header */
 	/* Qualification */
+
+	.menu-btns {
+		flex-direction: row;
+	}
+
 	.quali-items{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

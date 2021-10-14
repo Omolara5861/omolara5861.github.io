@@ -713,18 +713,18 @@ b {
 	border:1px solid var(--borderColor);
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: 0 0 15px -8px #000;
 	cursor: pointer;
-    transition: all .25s ease;
-    top: 0;
-    overflow: hidden;
+    transition: all cubic-bezier(.4,0,.2,1) 1s;
 	border-radius: 10px;
 }
 
-.post:hover {
-	top: -10px;
-	box-shadow: 0 24px 20px rgb(0 0 0 / 25%);
+.post:hover { 
+	transform: scale(1.1);
+    box-shadow: 10px 10px 15px -6px #15023a;
 }
+
+
 
 .thumbnail{
 	display: block;

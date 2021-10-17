@@ -81,54 +81,6 @@
           <span></span>
           Download Resume</a>
       </div>
-    <!-- </div>
-     <h3 style="font-size: 4em; font-weight: 500; text-align: center;">Meet My Friends</h3>
-    <!-- Slider Image code begins Here 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="img/Preshy.jpeg" alt="Precious Picture" >
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Peace.jpeg" alt="Peace Picture">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Eniola.jpeg" alt="Eniola's picture">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Lara2.jpeg" alt="My picture">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Beauty.jpeg" alt="Peace's Picture">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Oyin.jpeg" alt="Oyinlola's Picture">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="img/Nelson.jpeg" alt="Nelson's Picure">
-  </div>
-
-  <!-- Next and previous buttons of the Slider --
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br> -->
-
-<!-- The dots/circles below the Slider --
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-</div>-->
 </section> 
   <!--About me Section ends here-->
 
@@ -344,33 +296,37 @@
   
   <!-- Contact Section -->
   <section id="contact">
-    <div class="contact container">
+    <div class="contact containe">
       <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
+        <h1 class="section-title">Contact <span>Me</span></h1>
       </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="address icon"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Egbeda, Lagos, 100276</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="phone icon"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+234 8107614336</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="email icon" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>debbiegterra@gmail.com</h2>
-          </div>
-        </div>
-      </div>
+      <div class="container1">
+      <img src="img/undraw_working_remotely_jh40.svg" alt="contact" width="600">
+      <div class="formContainer">
+        <form class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jane@gmail.com" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+            </div>
+            <div class="btn1Parent">
+                <button type="submit" class="btn1">Send Message!</button>
+            </div>
+        </form>
+    </div>
+    </div>
     </div>
   </section>
   <!-- End of Contact Section -->
@@ -405,6 +361,8 @@
     </div>
   </footer>
   <!-- End Footer -->
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -765,6 +765,20 @@ textarea{
     transform:translateX(0px);
 
 }
+
+#my-form-status {
+    margin: 10px 0;
+	font-weight: bold;
+	font-size: 2rem
+}
+
+.success {
+	color: green;
+}
+
+.error {
+	color: red;
+}
 /*End contact Section */
 
 /* Footer */

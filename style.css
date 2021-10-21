@@ -678,8 +678,14 @@ b {
     display: grid;
 	grid-template-columns: auto ;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 50px auto;
 	width: 90%;
+	text-align: center;
+}
+
+.container1 strong {
+	font-size: 1.7rem;
+
 }
 
 .container1 img{
@@ -911,6 +917,7 @@ textarea{
 	.container1{
 		grid-template-columns: 1fr 1fr ;
 		grid-column-gap: 30px;
+		text-align: left;
 		
 	}
 	.btn1Parent {

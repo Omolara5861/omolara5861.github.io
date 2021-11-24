@@ -163,6 +163,7 @@ p {
 }
 .brand h1 span {
 	color: var(--main-color);
+	font-size: 40px;
 }
 
 /* Header section */
@@ -235,6 +236,8 @@ p {
 }
 #header .nav-list ul li:hover a {
 	color: var(--main-color);
+	box-shadow: 0 15px 20px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 #header .hamburger {
 	height: 60px;
@@ -679,7 +682,12 @@ b {
 	grid-template-columns: auto ;
 	max-width: 1200px;
 	margin: 50px auto;
-	width: 90%;
+	/* width: 90%; */
+	text-align: center;
+}
+
+.work {
+	padding: 0 20px;
 	text-align: center;
 }
 
@@ -964,6 +972,10 @@ textarea{
 	.container2 {
 		width: 50%;
 		margin: auto;
+	}
+
+	.work {
+		padding: 0 100px;
 	}
 }
 /* End  Media Query For Desktop */

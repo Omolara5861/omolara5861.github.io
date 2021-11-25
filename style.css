@@ -16,7 +16,15 @@ html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 }
+
+.dark-mode {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+}
+
 a {
 	text-decoration: none;
 }
@@ -33,7 +41,6 @@ img {
 	object-fit: cover;
 }
 p {
-	color: var(--secondary-color);
 	font-size: 1.4rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -43,7 +50,6 @@ p {
 .section-title {
 	font-size: 3rem;
 	font-weight: 300;
-	color: var(--secondary-color);
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -392,6 +398,11 @@ p {
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
+#about .col-right .cta:hover {
+	color: var(--primary-color);
+}
+
 #about .col-left .about-img {
 	height: 100%;
 	width: 100%;
@@ -826,6 +837,28 @@ textarea{
 	color: var(--primary-color);
 	font-size: 1.3rem;
 }
+
+#footer #theme {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 30px;
+	right: 10px;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    padding:3rem;
+    background-color:var(--secondary-color);
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+#footer #theme img {
+	width: 50px;
+	height: 50px;
+}
+
 /* End Footer */
 
 /* Keyframes */

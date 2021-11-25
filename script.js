@@ -98,3 +98,49 @@ var form = document.getElementById("my-form");
       });
     }
     form.addEventListener("submit", handleSubmit);
+
+    // Dark Mode
+    let theme = document.getElementById('theme');
+    let icon = document.getElementById('icon');
+    let cta = document.querySelector('.cta1');
+    
+    if(localStorage.getItem('theme') == 'null') {
+        localStorage.setItem('theme', 'light');
+    }
+
+    let localData = localStorage.getItem('theme');
+
+    if(localData == 'light') {
+        theme.style.background = '#000';
+        cta.style.color = '#000';
+        icon.src = 'https://img.icons8.com/bubbles/100/000000/partly-cloudy-night.png';
+        document.body.classList.remove('dark-mode');
+    }
+    else if(localData == 'dark'){
+        theme.style.background = '#fff';
+        cta.style.color = '#fff';
+        icon.src =  'https://img.icons8.com/bubbles/100/000000/sun.png';
+        document.body.classList.add('dark-mode');
+    }
+
+
+
+    theme.onclick = function() {
+        document.body.classList.toggle('dark-mode');
+        theme.style.background = '#fff';
+        cta.style.color = '#fff';
+        if(document.body.classList.contains('dark-mode')) {
+            icon.src = 'https://img.icons8.com/bubbles/100/000000/sun.png';
+            localStorage.setItem('theme', 'dark');
+            theme.style.background = '#fff';
+            cta.style.color = '#fff';
+        }
+        else {
+            icon.src = 'https://img.icons8.com/bubbles/100/000000/partly-cloudy-night.png';
+            localStorage.setItem('theme', 'light');
+            theme.style.background = '#000';
+            cta.style.color = '#000';
+        }
+    };
+
+    

@@ -12,7 +12,7 @@ body {
     background: #111;
 }
 
-.container {
+.preloader {
     position: relative;
     width: 100%;
     display: flex;
@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 
-.container .ring {
+.preloader .ring {
     position: relative;
     width: 150px;
     height: 150px;
@@ -41,7 +41,7 @@ body {
 }
 
 
-.container .ring::before {
+.preloader .ring::before {
     content: '';
     position: absolute;
     top: 12px;
@@ -57,14 +57,14 @@ body {
     0 0 50px #24ecff;
 }
 
-.container .ring:nth-child(2) {
+.preloader .ring:nth-child(2) {
     animation: animate2 4s linear infinite;
     animation-delay: -1s;
     border-left: 4px solid #93ff2d;
     border-top: 4px solid transparent;
 }
 
-.container .ring:nth-child(2)::before {
+.preloader .ring:nth-child(2)::before {
     content: '';
     position: absolute;
     top: initial;
@@ -90,7 +90,7 @@ body {
     }
 }
 
-.container .ring:nth-child(3) {
+.preloader .ring:nth-child(3) {
     animation: animate2 4s linear infinite;
     animation-delay: -3s;
     position: absolute;
@@ -99,7 +99,7 @@ body {
     border-left: 4px solid #e41cf8;
 }
 
-.container .ring:nth-child(3)::before {
+.preloader .ring:nth-child(3)::before {
     content: '';
     position: absolute;
     top: initial;
@@ -116,7 +116,7 @@ body {
     0 0 50px #e41cf8;
 }
 
-.container p {
+.preloader p {
     position: absolute;
     color: #fff;
     font-size: 1.5em;

@@ -20,9 +20,10 @@ html {
 	color: var(--secondary-color);
 }
 
+
 .dark-mode {
 	background-color: var(--secondary-color);
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 }
 
 a {
@@ -471,6 +472,10 @@ p {
 }
 .active-btn{
     color: var(--secondary-color);
+}
+
+.dark-mode .active-btn {
+	color: var(--primary-color);
 }
 
 b {

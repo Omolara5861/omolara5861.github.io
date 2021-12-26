@@ -382,6 +382,8 @@ p {
 	height: 360px;
 }
 #about .col-right {
+	margin-top: 50px;
+	align-items: center;
 	width: 100%;
 }
 #about .col-right h2 {
@@ -716,6 +718,7 @@ b {
 		width: 100%;
 		height: auto;
 		object-fit: cover;
+		align-items: center;
 	}
 
 .formContainer{
@@ -1013,7 +1016,12 @@ textarea{
 	}
 
 	.work {
-		padding: 0 100px;
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	.container1 img {
+		margin-top: 50px;
 	}
 }
 /* End  Media Query For Desktop */

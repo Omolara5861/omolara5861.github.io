@@ -58,6 +58,33 @@ function showMenu(newMenuBtn){
     });
 }
 
+// Portfolio Slider
+let slider = tns({
+    container: '.my-slider',
+    "animateIn": "jello",
+    "animateOut": "rollOut",
+    "speed": 400,
+    "nav" : false,
+    "swipeAngle": false,
+    controlsContainer: '#controls',
+    prevButton: '.previous',
+    nextButton: '.next',
+    responsive: {
+      1280: {
+        items: 3,
+        gutter: 20
+      },
+      1024: {
+        items: 2,
+        gutter: 20
+      },
+      768: {
+        items: 1,
+        gutter: 20
+      }
+    }
+  });
+
 // Contact Section
 $(function() {
     $(".form-control").on('focus', function(){

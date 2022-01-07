@@ -637,63 +637,110 @@ b {
 /* End of Skills Section */
 
 /* Project Section */
-.post-wrapper{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
-	gap:20px;
-	justify-content: center;
-	padding-bottom: 50px;
+.slider-wrapper{
+    width: 85%;
+    margin: auto;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0 40px 0;
+	text-align: center;
 }
 
-.post{
-	border:1px solid var(--borderColor);
-	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-    box-shadow: 0 0 15px -8px #000;
-	cursor: pointer;
-    transition: all cubic-bezier(.4,0,.2,1) 1s;
-	border-radius: 10px;
+.slider-wrapper h3 {
+	font-size: 25px;
 }
 
-.post:hover { 
-	transform: scale(1.1);
-    box-shadow: 10px 10px 15px -6px #15023a;
+.box{
+    height: 197px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box:hover{
+    box-shadow: 0 0 0 125px rgba(0, 0, 0, 0.9) inset;
+  }
+  
+  .box p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .box:hover p{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .news, .cake, .dinosaur, .music, .face-detection, .blackjack, .ecommerce {
+    background-position: center;
+    background-size: cover;
+    background-image: url('img/cake.png');
+  }
+  
+  .news{
+     background-image: url('img/newsgridsite.png');
+  }
+  
+  .face-detection{
+     background-image: url('img/face-recognition.png');
+  }
+  
+  .dinosaur{
+    background-image: url("img/dino.png");
+  }
+  
+  .blackjack{
+    background-image: url("img/blackjackgame.png");
+  }
+  
+  .music {
+     background-image: url('img/macmusicapp.png');
+  }
+  
+  .ecommerce{
+     background-image: url('img/ecommerce.png');
+  }
+
+  #controls{
+    text-align: center;
+  }
+  
+#controls button{
+  margin: 0 5px;
+  padding: 8px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  transition: 0.3s ease-out;
+  border: 3px solid var(--main-color);
+  box-shadow: 0 5px rgba(0,0,0,0.2);
+margin-bottom: 50px;
 }
+  
+  #controls button:hover{
+    border: 3px solid white;
+    background-color: var(--main-color);
+    transform: scale(1.05);
+  }
 
+  #controls button:hover i {
+	color: var(--primary-color);
+  }
+  
+  #controls i{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
 
-
-.thumbnail{
-	display: block;
-	width: 100%;
-	height:180px;
-	object-fit: cover;
-}
-
-.post-preview{
-	background-color: #fff;
-	padding:15px;
-}
-
-.post-title{
-	color:black;
-	margin: 0;
-	font-size: 2rem;
-}
-
-.post-intro{
-	color:#4b5156;
-	font-size: 14px;
-}
 
 /* End of Project Section */
-
-/* contact Section */
-/* #contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-} */
 
 .container1{
     display: grid;
@@ -1022,6 +1069,10 @@ textarea{
 
 	.container1 img {
 		margin-top: 50px;
+	}
+
+	.slider-wrapper {
+        text-align: left;
 	}
 }
 /* End  Media Query For Desktop */

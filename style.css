@@ -599,7 +599,7 @@ b {
 }
 @keyframes html-fill{
     100%{
-        width: 90%;
+        width: 95%;
     }
 }
 #css-bar{
@@ -607,13 +607,29 @@ b {
 }
 @keyframes css-fill{
     100%{
-        width: 75%;
+        width: 90%;
+    }
+}
+#tailwind-bar{
+    animation: tailwind-fill 2s forwards;
+}
+@keyframes tailwind-fill{
+    100%{
+        width: 89%;
     }
 }
 #js-bar{
     animation: js-fill 2s forwards;
 }
 @keyframes js-fill {
+    100%{
+        width: 92%;
+    }
+}
+#angular-bar{
+    animation: angular-fill 2s forwards;
+}
+@keyframes angular-fill {
     100%{
         width: 72%;
     }
@@ -623,15 +639,15 @@ b {
 }
 @keyframes V-control-fill{
     100%{
-        width: 58%;
+        width: 68%;
     }
 } 
-#R-design-bar{
+#rwd-bar{
     animation: R-design-fill 2s forwards;
 }
 @keyframes R-design-fill{
     100%{
-        width: 58%;
+        width: 78%;
     }
 }
 /* End of Skills Section */

@@ -518,8 +518,8 @@ b {
     padding: 1rem;
 }
 
-.position {
-    color: var(--main-color);
+.name {
+    color: var(--secondary-color);
     font-weight: 500;
     text-transform: capitalize;
 	font-size: 25px;
@@ -535,15 +535,6 @@ b {
     font-weight: 600;
     font-size: 1.4rem;
     opacity: 0.8;
-}
-
-.category{
-    padding-top: 0.2rem;
-    font-size: 1rem;
-    font-weight: 800;
-}
-.category span{
-    font-weight: 500;
 }
 
 /* End of Qualification */
@@ -618,12 +609,28 @@ b {
         width: 89%;
     }
 }
+#sass-bar{
+    animation: sass-fill 2s forwards;
+}
+@keyframes sass-fill{
+    100%{
+        width: 79%;
+    }
+}
 #js-bar{
     animation: js-fill 2s forwards;
 }
 @keyframes js-fill {
     100%{
         width: 92%;
+    }
+}
+#typescript-bar{
+    animation: typescript-fill 2s forwards;
+}
+@keyframes typescript-fill{
+    100%{
+        width: 90%;
     }
 }
 #angular-bar{
@@ -693,7 +700,7 @@ b {
     transform: scale(1);
   }
   
-  .news, .cake, .dinosaur, .music, .face-detection, .blackjack, .ecommerce {
+  .news, .cake, .dinosaur, .music, .face-detection, .blackjack, .ecommerce, .sunnyside {
     background-position: center;
     background-size: cover;
     background-image: url('img/cake.png');
@@ -722,6 +729,10 @@ b {
   .ecommerce{
      background-image: url('img/ecommerce.png');
   }
+
+  .sunnyside{
+	background-image: url('img/sunnyside.png');
+ }
 
   #controls{
     text-align: center;

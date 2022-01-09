@@ -518,6 +518,9 @@ b {
     padding: 1rem;
 }
 
+.position {
+	font-size: 2rem;
+}
 .name {
     color: var(--secondary-color);
     font-weight: 500;

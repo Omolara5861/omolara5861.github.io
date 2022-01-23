@@ -702,7 +702,7 @@ b {
     transform: scale(1);
   }
   
-  .news, .cake, .dinosaur, .music, .face-detection, .blackjack, .ecommerce, .sunnyside {
+  .news, .cake, .dinosaur, .music, .face-detection, .blackjack, .ecommerce, .sunnyside, .quiz {
     background-position: center;
     background-size: cover;
     background-image: url('img/cake.png');
@@ -725,8 +725,12 @@ b {
   }
   
   .music {
-     background-image: url('img/macmusicapp.png');
+     background-image: url('img/quiz.png');
   }
+
+  .quiz {
+	background-image: url('img/macmusicapp.png');
+ }
   
   .ecommerce{
      background-image: url('img/ecommerce.png');

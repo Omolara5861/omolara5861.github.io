@@ -640,9 +640,19 @@ b {
 }
 @keyframes angular-fill {
     100%{
-        width: 72%;
+        width: 82%;
     }
 }
+
+#ionic-bar{
+    animation: ionic-fill 2s forwards;
+}
+@keyframes ionic-fill {
+    100%{
+        width: 92%;
+    }
+}
+
 #V-control-bar{
     animation: V-control-fill 2s forwards;
 }

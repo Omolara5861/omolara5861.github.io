@@ -635,6 +635,14 @@ b {
         width: 90%;
     }
 }
+#wordpress-bar{
+    animation: wordpress-fill 2s forwards;
+}
+@keyframes wordpress-fill{
+    100%{
+        width: 70%;
+    }
+}
 #angular-bar{
     animation: angular-fill 2s forwards;
 }

@@ -635,6 +635,7 @@ b {
         width: 90%;
     }
 }
+
 #wordpress-bar{
     animation: wordpress-fill 2s forwards;
 }
@@ -666,7 +667,7 @@ b {
 }
 @keyframes V-control-fill{
     100%{
-        width: 68%;
+        width: 90%;
     }
 } 
 #rwd-bar{

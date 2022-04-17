@@ -757,6 +757,10 @@ b {
      background-image: url('img/quiz.png');
   }
 
+  .dashboard {
+	background-image: url('img/dashboard.png');
+ }
+
   .music {
 	background-image: url('img/macmusicapp.png');
  }

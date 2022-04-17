@@ -644,6 +644,16 @@ b {
         width: 70%;
     }
 }
+
+#php-bar{
+    animation: php-fill 2s forwards;
+}
+@keyframes php-fill{
+    100%{
+        width: 80%;
+    }
+}
+
 #angular-bar{
     animation: angular-fill 2s forwards;
 }

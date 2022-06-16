@@ -688,6 +688,14 @@ b {
         width: 78%;
     }
 }
+#ui-ux-bar{
+    animation: R-design-fill 2s forwards;
+}
+@keyframes R-design-fill{
+    100%{
+        width: 80%;
+    }
+}
 /* End of Skills Section */
 
 /* Project Section */

@@ -955,6 +955,13 @@ textarea{
 	width: 50px;
 	margin: 0 5px;
 }
+#footer .social-item:last-child img{
+	border-radius: 50%;
+	height: 38px;
+	width: 38px;
+	margin-bottom: -35px ;
+	
+}
 #footer .social-item img {
 	filter: grayscale(1);
 	transition: 0.3s ease filter;

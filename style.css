@@ -180,7 +180,7 @@ p {
 
 /* End of CTA Animation */
 .brand h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	color: var(--primary-color);
 }
@@ -367,7 +367,7 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;

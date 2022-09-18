@@ -83,11 +83,30 @@ p {
 	overflow: hidden;
 }
 
-.cta:hover,
-.btn:hover {
-	color: var(--primary-color);
+.cta:after {
 	background-color: var(--main-color);
-}
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(-100%, 0) rotate(10deg);
+	transform-origin: top left;
+	transition: 0.2s transform ease-out;
+	will-change: transform;
+	z-index: -1;
+  }
+  .cta:hover:after {
+	transform: translate(0, 0);
+  }
+  .cta:hover {
+	border: 2px solid transparent;
+	color: #fff;
+	transform: scale(1.05);
+	will-change: transform;
+  }
 
 /* BTN Style */
 .btn {
@@ -453,8 +472,9 @@ p {
 }
 
 #about .col-right .cta:hover {
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 }
+
 
 #about .col-left .about-img {
 	height: 100%;

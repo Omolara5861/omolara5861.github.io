@@ -613,6 +613,7 @@ b {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+	font-size: 2rem;
 }
 
 .col,
@@ -655,7 +656,6 @@ b {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
 	font-size: 20px;
 	margin-right: 30px;
 }

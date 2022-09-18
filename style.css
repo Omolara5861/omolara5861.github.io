@@ -30,8 +30,12 @@ html {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
+button {
+	cursor: pointer;
+}
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -906,10 +910,51 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	text-align: center;
 }
 
+.draw-border {
+	box-shadow: inset 0 0 0 2px #aaa;
+	color: #555;
+	transition: color 0.25s 0.0833333333s;
+	position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+	border: 0 solid transparent;
+	box-sizing: border-box;
+	content: "";
+	pointer-events: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+  }
+  .draw-border::before {
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+  }
+  .draw-border::after {
+	border-top-width: 3px;
+	border-right-width: 3px;
+  }
+  .draw-border:hover {
+	color: var(--main-color);
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+	border-color: var(--main-color);
+	transition: border-color 0s, width 0.25s, height 0.25s;
+	width: 100%;
+	height: 100%;
+  }
+  .draw-border:hover::before {
+	transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+	transition-delay: 0s, 0.25s, 0s;
+  }
+
 .btn1 {
-	background: 0 0 #fff;
-	border: 1px solid #aaa;
+	background: none;
 	border-radius: 3px;
+	border: none;
 	color: #555;
 	padding: 10 50px;
 	text-transform: uppercase;
@@ -921,9 +966,8 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	align-self: center;
 }
 
-.btn1:hover {
-	border-color: var(--main-color);
-	color: var(--main-color);
+.btn1:focus {
+	outline: 4px dotted #aaa;
 }
 
 textarea {

@@ -36,6 +36,7 @@ a {
 button {
 	cursor: pointer;
 }
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -101,16 +102,18 @@ p {
 	transition: 0.2s transform ease-out;
 	will-change: transform;
 	z-index: -1;
-  }
-  .cta:hover:after {
+}
+
+.cta:hover:after {
 	transform: translate(0, 0);
-  }
-  .cta:hover {
+}
+
+.cta:hover {
 	border: 2px solid transparent;
 	color: #fff;
 	transform: scale(1.05);
 	will-change: transform;
-  }
+}
 
 /* BTN Style */
 .btn {
@@ -634,10 +637,10 @@ b {
 
 /* Skills Section */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
 	font-size: 2rem;
 }
 
@@ -645,7 +648,7 @@ b {
 .col-lg-3,
 .col-lg-12,
 .col-sm-6,
-.col-sm-12{
+.col-sm-12 {
 	position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -656,12 +659,12 @@ b {
 .box-2 {
 	position: relative;
 	padding: 30px;
-/* From https://css.glass */
-background: rgba(7, 7, 8, 0.9);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.9px);
--webkit-backdrop-filter: blur(6.9px);
-border: 1px solid rgba(7, 7, 8, 0.49);
+	/* From https://css.glass */
+	background: rgba(7, 7, 8, 0.9);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.9px);
+	-webkit-backdrop-filter: blur(6.9px);
+	border: 1px solid rgba(7, 7, 8, 0.49);
 	transition: all .3s ease-in-out;
 	/* border-radius: 10px; */
 	color: #fff;
@@ -693,14 +696,14 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
 	text-shadow: none;
 	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  
-  .inter-icon:hover {
+}
+
+.inter-icon:hover {
 	border: 1px solid;
 	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
 	outline-color: rgba(255, 255, 255, 0);
 	text-shadow: 1px 1px 2px #427388;
-  }
+}
 
 .desc-inter {
 	padding-top: 3px;
@@ -749,6 +752,7 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	transform: scale(1);
 }
 
+.cv,
 .news,
 .cake,
 .dinosaur,
@@ -761,26 +765,37 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	background-position: center;
 	background-size: cover;
 	background-image: url('img/cake.png');
+	background-position: top center;
+}
+
+.cv {
+	background-image: url('img/digital_cv.png');
+	background-position: top center;
 }
 
 .news {
 	background-image: url('img/newsgridsite.png');
+	background-position: top center;
 }
 
 .face-detection {
 	background-image: url('img/face-recognition.png');
+	background-position: top center;
 }
 
 .dinosaur {
 	background-image: url("img/dino.png");
+	background-position: top center;
 }
 
 .blackjack {
 	background-image: url("img/blackjackgame.png");
+	background-position: top center;
 }
 
 .quiz {
 	background-image: url('img/quiz.png');
+	background-position: top center;
 }
 
 .dashboard {
@@ -789,14 +804,17 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 
 .music {
 	background-image: url('img/macmusicapp.png');
+	background-position: top center;
 }
 
 .ecommerce {
 	background-image: url('img/ecommerce.png');
+	background-position: top center;
 }
 
 .sunnyside {
 	background-image: url('img/sunnyside.png');
+	background-position: top center;
 }
 
 #controls {
@@ -919,8 +937,10 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	color: #555;
 	transition: color 0.25s 0.0833333333s;
 	position: relative;
-  }
-  .draw-border::before, .draw-border::after {
+}
+
+.draw-border::before,
+.draw-border::after {
 	border: 0 solid transparent;
 	box-sizing: border-box;
 	content: "";
@@ -930,30 +950,37 @@ border: 1px solid rgba(7, 7, 8, 0.49);
 	height: 0;
 	bottom: 0;
 	right: 0;
-  }
-  .draw-border::before {
+}
+
+.draw-border::before {
 	border-bottom-width: 3px;
 	border-left-width: 3px;
-  }
-  .draw-border::after {
+}
+
+.draw-border::after {
 	border-top-width: 3px;
 	border-right-width: 3px;
-  }
-  .draw-border:hover {
+}
+
+.draw-border:hover {
 	color: var(--main-color);
-  }
-  .draw-border:hover::before, .draw-border:hover::after {
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
 	border-color: var(--main-color);
 	transition: border-color 0s, width 0.25s, height 0.25s;
 	width: 100%;
 	height: 100%;
-  }
-  .draw-border:hover::before {
+}
+
+.draw-border:hover::before {
 	transition-delay: 0s, 0s, 0.25s;
-  }
-  .draw-border:hover::after {
+}
+
+.draw-border:hover::after {
 	transition-delay: 0s, 0.25s, 0s;
-  }
+}
 
 .btn1 {
 	background: none;

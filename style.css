@@ -754,6 +754,11 @@ b {
 	transform: scale(1);
 }
 
+.repo-link {
+	color: var(--main-color);
+	margin-left: 10px;
+}
+
 .cv,
 .news,
 .cake,

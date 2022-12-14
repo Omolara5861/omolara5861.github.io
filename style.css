@@ -789,7 +789,7 @@ b {
 }
 
 .gold {
-	background: gold;
+	background: rgb(189, 162, 8);
 }
 
 .red {
@@ -801,7 +801,7 @@ b {
 }
 
 .green {
-	background: yellowgreen;
+	background: rgb(79, 110, 15);
 }
 
 .crimson {
@@ -821,7 +821,7 @@ b {
 }
 
 .gainsboro {
-	background: gainsboro;
+	background: rgb(129, 126, 126);
 }
 
 .cv,

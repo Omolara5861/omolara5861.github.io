@@ -831,7 +831,7 @@ b {
 .contact-manager,
 .face-detection,
 .blackjack,
-.ecommerce,
+.bookshop,
 .sunnyside,
 .quiz {
 	background-position: center;
@@ -879,8 +879,8 @@ b {
 	background-position: top center;
 }
 
-.ecommerce {
-	background-image: url('img/ecommerce.png');
+.bookshop {
+	background-image: url('img/bookshop.png');
 	background-position: top center;
 }
 

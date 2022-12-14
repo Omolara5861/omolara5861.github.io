@@ -828,7 +828,7 @@ b {
 .news,
 .cake,
 .dinosaur,
-.music,
+.contact-manager,
 .face-detection,
 .blackjack,
 .ecommerce,
@@ -874,8 +874,8 @@ b {
 	background-image: url('img/dashboard.png');
 }
 
-.music {
-	background-image: url('img/macmusicapp.png');
+.contact-manager {
+	background-image: url('img/contact.png');
 	background-position: top center;
 }
 

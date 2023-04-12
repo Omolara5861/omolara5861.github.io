@@ -779,44 +779,44 @@ b {
 }
 
 /* Badge Colors */
-.blue {
-	background: dodgerblue;
+.html {
+	background: #e34f26;
 }
 
-.orange {
-	background: darkorange;
+.css{
+	background: #1572b6;
 }
 
-.gold {
-	background: rgb(189, 162, 8);
+.js{
+	background: #323330;
 }
 
-.red {
-	background: red;
+.ts {
+	background: #007acc;
 }
 
-.purple {
-	background: mediumpurple;
+.node {
+	background: #6da55f;
 }
 
-.green {
-	background: rgb(79, 110, 15);
+.express {
+	background: #404d59;
 }
 
-.crimson {
-	background: var(--main-color)
+.react {
+	background: #20232a
 }
 
-.steel {
-	background: steelblue;
+.angular {
+	background: #dd0031;
 }
 
-.pink {
-	background: hotpink;
+.mongodb {
+	background: #4ea94b;
 }
 
-.rebecca {
-	background: rebeccapurple;
+.tailwind {
+	background: #38b2ac;
 }
 
 .gainsboro {

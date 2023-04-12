@@ -829,9 +829,9 @@ b {
 .dinosaur,
 .contact-manager,
 .face-detection,
-.blackjack,
+.stripe-store,
 .bookshop,
-.sunnyside,
+.jobflow,
 .quiz {
 	background-position: center;
 	background-size: cover;
@@ -859,8 +859,8 @@ b {
 	background-position: top center;
 }
 
-.blackjack {
-	background-image: url("img/blackjackgame.png");
+.stripe-store {
+	background-image: url("img/stripe-store.png");
 	background-position: top center;
 }
 
@@ -883,8 +883,8 @@ b {
 	background-position: top center;
 }
 
-.sunnyside {
-	background-image: url('img/sunnyside.png');
+.jobflow {
+	background-image: url('img/jobflow.png');
 	background-position: top center;
 }
 
